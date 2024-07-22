@@ -13,5 +13,7 @@ Using the algorithm to solve the Magic Square raises a few challenges. The first
 For X = 4:
 
 (X-1)+(X)+(X+1) = (4-1)+(4)+(4+1) = 3+4+5 = 12 
+
 (X-3)+(X)+(X+3) = (4-3)+(4)+(4+3) = 1+4+7 = 12 
+
 Which we can see is also 3X.
