@@ -17,3 +17,19 @@ For X = 4:
 (X-3)+(X)+(X+3) = (4-3)+(4)+(4+3) = 1+4+7 = 12 
 
 Which we can see is also 3X.
+
+For X = 5:
+
+(X-1)+(X)+(X+1) = (5-1)+(5)+(5+1) = 4+5+6 = 15 
+
+(X-3)+(X)+(X+3) = (5-3)+(5)+(5+3) = 2+5+8 = 15 
+
+Which we can see is also 3X.
+
+For X = 6:
+
+The same logic applies and to save the math 3*6 = 18. 
+
+Therefore, we know that the Magic Constant for (4 = 12), (5 = 15), and (6 = 18). Hopwever, this now arises the limitation of the algorithm. If X = 4 then we know the Magic Constant is 12. We also know that the 4 corners are a combination of (3,5,1,7). This leaves (2,6,8,9) as the remaining values for the outside middles. And if we have 4 and 9 in the same row/column our sum already exceeds the Magic Constant of 12. Therefore 4 does not work as a vale of X and the only possible values of X that will satisfy the algorithm are 5 and 6. 
+
+The last challenge of using this algorithm is solving the square in the least number of steps. While it would be simple to set the middle square to 5 or 6 every time, this leads to potentially more moves than necessary. Furthermore, if some of the corners already align with values that satisfy the algorithm then it is best to leave those and change the other corners accordingly. This logic then must be translated into the code. 
